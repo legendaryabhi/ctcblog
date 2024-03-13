@@ -5,11 +5,8 @@ import { Insta, Youtube, LinkedinIcon, TwitterIcon } from "../Icons";
 import siteMetadata from "@/src/utils/siteMetaData";
 
 const Footer = () => {
-  
-
   return (
     <footer className="mt-16 rounded-2xl bg-dark dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
-      
       <div className="flex items-center mt-8">
         <a
           href={siteMetadata.linkedin}
@@ -53,13 +50,8 @@ const Footer = () => {
         <span className="text-center">
           &copy;2024 ConquerortheCrown. All rights reserved.
         </span>
+
         
-        <div className="text-center">
-          Made by{" "}
-          <a href="https://devdreaming.com" className="underline" target="_blank">
-            ConquerortheCrown
-          </a>
-        </div>
       </div>
     </footer>
   );
