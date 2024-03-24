@@ -1,8 +1,9 @@
-import "./globals.css";
+import "../globals.css";
 import { cx } from "@/src/utils";
 import { Inter, Manrope } from "next/font/google";
-
-import siteMetadata from "../utils/siteMetaData";
+import Header from "@/src/components/Header";
+import Footer from "../../components/Footer";
+import siteMetadata from "../../utils/siteMetaData";
 import Script from "next/script";
 
 const inter = Inter({
@@ -69,9 +70,9 @@ export default function RootLayout({ children }) {
     document.documentElement.classList.remove('dark')
   }`}
         </Script>
-        
+        <Header />
         {children}
-        
+        <Footer />
       </body>
     </html>
   );
