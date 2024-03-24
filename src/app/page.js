@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import './globals.css'
+import { NextSeo } from 'next-seo';
 
 export default function Home() {
   return (
+    
     <div
   style={{
     backgroundColor: "#010511",
@@ -13,6 +15,12 @@ export default function Home() {
     left: 0
   }}
 >
+    <NextSeo
+        title="ConquerortheCrown"
+        description="At ConquerortheCrown, Our Mission is to help those people who want to Escape the Rat-Race."
+        keywords={['conquerorthecrown', 'ConquerortheCrown', 'conquerorthecrown download', 'ctc', 'Conqueror the crown', 'Personal andrew tate', 'andrew tate genai', 'conquerorthecrown webapp']}
+      />
+
        <div style={{display:'flex', alignItems: 'center', padding:20, justifyContent: 'space-between', background:'#02010e'}}>
         <img src="/logo.png" alt="Logo" style={{height:44, width:44}} />
         <Link href="/blog" style={{color:'white', fontSize:20, textDecoration:'none', fontFamily:"monospace"}}>Get Started</Link>
